@@ -10,16 +10,18 @@
             // Dica para ordenar lista: sort(), usando função de comparação
 
             function criarObjeto() {
-                const produto = {descricao: "FAVO DE MEL 500G", preco: "R$ 30,00", urlImagem: "https://cdn.awsli.com.br/600x700/1714/1714889/produto/139336422/5196a83344.jpg"};
-                desenharProduto(produto);
+                const produtos = [{descricao: "FAVO DE MEL 500G", preco: "R$ 30,00", urlImagem: "https://cdn.awsli.com.br/600x700/1714/1714889/produto/139336422/5196a83344.jpg"}, 
+                {descricao: "FAVO DE MEL 250G", preco: "R$ 15,00", urlImagem: "https://cdn.awsli.com.br/600x700/1714/1714889/produto/139336422/5196a83344.jpg"}];
+                desenharProduto(produtos);
             }
 
-            function desenharProduto(produto) {
+            function desenharProduto(produtos) {
                 const container = document.querySelector("#container");
-                container.innerHTML =
-                    `<img src="${produto.urlImagem}"/>` +
-                    `<div>${produto.descricao}</div>` +
-                    `<div>${produto.preco}</div>`;
+                for (i in produtos)
+                container.innerHTML +=
+                    `<img src="${produtos[i].urlImagem}"/>` +
+                    `<div>${produtos[i].descricao}</div>` +
+                    `<div>${produtos[i].preco}</div>`;
             }
 
         </script>
