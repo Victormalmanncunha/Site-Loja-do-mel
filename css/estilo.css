@@ -140,29 +140,44 @@ a{
 }
 .section-contato iframe{
 	border-radius: 2rem;
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 	margin-bottom: -0.50rem;
 }
 .contatos{
-	padding: 2rem;
-	background-color: white;
+	padding: 5rem;
+	background-color: #f7f7f7;
+	background-image:url(/Imagens/fundo.jpg);
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	border: var(--preto-fosco) solid 0.75rem;
+	border: var(--preto-fosco) solid 0.25rem;
 	border-radius: 3rem;
+	margin: 2rem;
 }
 .contatos p{
 	margin: -1rem;
 }
 .mapagoogle{
-	border: var(--preto-fosco) solid 0.75rem;
+	border: var(--preto-fosco) solid 0.5rem;
 	border-radius: 3rem;
+	margin: 2rem;
 }
 @media screen and (max-width: 900px){
 	.section-contato iframe{
 		width: 300px;
 		height: 300px;
+	}
+	.section-contato{
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 700px){
+	.section-contato iframe{
+		width: 200px;
+		height: 200px;
 	}
 	.section-contato{
 		font-size: 2rem;
@@ -177,13 +192,31 @@ a{
 		font-size: 1.5rem;
 	}
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
 	.section-contato iframe{
-		width: 100px;
-		height: 100px;
+		width: 75px;
+		height: 75px;
 	}
 	.section-contato{
 		font-size: 1rem;
+	}
+	.section-contato p{
+		margin: 0rem;
+	}
+}
+@media screen and (max-width: 400px){
+	.section-contato iframe{
+		width: 40px;
+		height: 40px;
+	}
+	.section-contato{
+		font-size: 1rem;
+	}
+	.section-contato p{
+		margin: 0rem;
+	}
+	.mapagoogle{
+		margin-left: -2rem;
 	}
 }
 .section-catalogo{
@@ -241,4 +274,17 @@ a{
 .compras li img{
 	max-width: 50%;
 	max-height: 300px;
+}
+#section-login{
+	background-color: var(--amarelo-escuro);
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+#section-login div{
+	display: inline-block;
+	border-radius: 2rem;
+	background-color: white;
+	padding: 2rem;
 }
